@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/opmaak.css">
+	<link rel="stylesheet" type="text/css" href="styles/grid-indeling.css">
+	<script src="scripts/weersverwachting.js" defer></script>
+	<script src="scripts/restaurants.js" defer></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css' rel='stylesheet' />	
+	<title>SpaceX dashboard landing</title>
+</head>
+
+<body>
+	<header>
+		<div class="hamburger-menu" onclick="myFunction(this)">
+	 		<div class="bar1"></div>
+	  		<div class="bar2"></div>
+	  		<div class="bar3"></div>
+		</div>
+	</header>
+
+	<h1>Dashboard</h1>
+
+	<p>Over enkele dagen landen we weer op Aarde. 
+		Om je alvast voor te bereiden op je aankomst staan hieronder twee onderdelen waar je informatie over kan vinden. 
+	</p>
+
+	<main class="grid-container">
+
+		<section class="grid-item box1">
+			<p>Weersverwachting</p>
+			<hr>
+
+			<article id="weersverwachting">
+				<p for="stad">Vul een plaatsnaam in waarvan je de weersverwachting wilt weten</p> 
+				<input type="text" name="stad" id="stad" />
+				<input type="button" id="geefWeer" value="Zoek plaats" />
+			</article>			
+		</section>
+
+	
+		<section class="grid-item box2">
+			<p>Restaurants</p>
+			<hr>
+			<p>Overzicht van restaurants in de buurt</p>
+			<div id="map"></div>
+		</section>
+
+		
+	</main>
+	
+</body>
+</html>
+
+
